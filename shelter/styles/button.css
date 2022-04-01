@@ -1,12 +1,15 @@
 .btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: fit-content;
   appearance: none;
   border-radius: 100px;
   height: 52px;
   padding: 15px 45px;
   cursor: pointer;
+  border: 2px solid #F1CDB3;
+  background-color: #fff;
 }
 
 .btn:hover {
@@ -16,5 +19,13 @@
 .btn-primary {
   background-color: #F1CDB3;
   border: none;
+}
+
+.btn-circle {
+  background: none;
+  border-radius: 100%;
+  padding: 0;
+  height: 52px;
+  width: 52px;
 }
 

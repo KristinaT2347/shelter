@@ -1,5 +1,5 @@
-@import '../../styles/buttons.css';
-
+@import "../../styles/button.css";
+@import "../../styles/card.css";
 
 a {
   text-decoration: none;
@@ -138,8 +138,38 @@ header nav ul li a.active {
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
-  color: #4C4C4C;
+  color: #4c4c4c;
   margin: 0;
 }
 
+/* our friends */
 
+.our-friends-section {
+  background-color: #f6f6f6;
+}
+
+.our-friends {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  height: 877px;
+}
+
+.our-friends > h2 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
+  margin: 0;
+  text-align: center;
+  width: 400px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
