@@ -5,6 +5,15 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  color: #545454;
+  text-align: center;
+  margin: 0;
+}
+
 ul,
 li {
   display: block;
@@ -13,7 +22,7 @@ li {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -81,12 +90,9 @@ header nav ul li a.active {
 }
 
 .not-only__left-block > h2 {
-  font-weight: 400;
   font-size: 44px;
-  line-height: 130%;
   color: #fff;
   width: 310px;
-  margin: 0;
 }
 
 .not-only__left-block > p {
@@ -126,13 +132,6 @@ header nav ul li a.active {
   padding-right: 175px;
 }
 
-.about__right-block > h2 {
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  color: #545454;
-  margin: 0;
-}
 
 .about__right-block > p {
   font-weight: 400;
@@ -158,12 +157,6 @@ header nav ul li a.active {
 }
 
 .our-friends > h2 {
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  color: #545454;
-  margin: 0;
-  text-align: center;
   width: 400px;
 }
 
@@ -187,12 +180,6 @@ header nav ul li a.active {
 }
 
 .help > h2 {
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  color: #545454;
-  text-align: center;
-  margin: 0;
   width: 308px;
 }
 
@@ -222,4 +209,73 @@ header nav ul li a.active {
   line-height: 115%;
   line-height: 115%;
   letter-spacing: 0.06em;
+}
+
+
+/* in addition */
+
+.in-addition-section {
+  background-color: #F6F6F6;
+}
+
+.in-addition{
+  display: flex;
+  height: 462px;
+  gap: 30px;
+  padding-top: 80px;
+}
+
+.in-addition__left-block {
+  padding-left: 182px;
+}
+
+.in-addition__right-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 380px;
+}
+
+.in-addition__right-block > h2 {
+  text-align: left;
+}
+
+.right-block__subtitle {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.bank-account {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: fit-content;
+  background-color: #F1CDB3;
+  border-radius: 9px;
+  padding: 10px 15px;
+}
+
+.bank-account__icon-svg {
+  height: 23px;
+  width: 30px;
+  color: #292929;
+}
+
+.bank-account__account {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.right-block__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  color: #B2B2B2;
 }
