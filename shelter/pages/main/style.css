@@ -132,7 +132,6 @@ header nav ul li a.active {
   padding-right: 175px;
 }
 
-
 .about__right-block > p {
   font-weight: 400;
   font-size: 15px;
@@ -166,7 +165,6 @@ header nav ul li a.active {
   justify-content: space-around;
   width: 100%;
 }
-
 
 /* help */
 
@@ -211,14 +209,13 @@ header nav ul li a.active {
   letter-spacing: 0.06em;
 }
 
-
 /* in addition */
 
 .in-addition-section {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
-.in-addition{
+.in-addition {
   display: flex;
   height: 462px;
   gap: 30px;
@@ -253,7 +250,7 @@ header nav ul li a.active {
   align-items: center;
   gap: 15px;
   width: fit-content;
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   border-radius: 9px;
   padding: 10px 15px;
 }
@@ -277,5 +274,58 @@ header nav ul li a.active {
   font-size: 12px;
   line-height: 18px;
   display: flex;
-  color: #B2B2B2;
+  color: #b2b2b2;
+}
+
+/* footer */
+
+footer {
+  background: url(../../assets/images/footer-gradient-background.jpg) no-repeat
+    center top / cover;
+}
+
+.footer {
+  display: flex;
+  height: 350px;
+  padding-top: 56px;
+  justify-content: space-between;
+  gap: 160px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 300px;
+}
+
+.footer__contacts h2 {
+  color: #ffffff;
+  max-width: 280px;
+  text-align: left;
+}
+
+.footer__contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+}
+
+.footer__contact > svg {
+  height: 40px;
+  width: 40px;
+  flex: none;
+}
+.footer__contact > a {
+  color: #f1cdb3;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+
+.footer__image-container {
+  display: flex;
+  align-items: flex-end;
 }
