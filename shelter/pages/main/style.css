@@ -173,3 +173,53 @@ header nav ul li a.active {
   justify-content: space-around;
   width: 100%;
 }
+
+
+/* help */
+
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 611px;
+  gap: 60px;
+}
+
+.help > h2 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
+  text-align: center;
+  margin: 0;
+  width: 308px;
+}
+
+.help__icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.help__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 200px;
+}
+
+.help__icon-svg {
+  height: 60px;
+  width: 60px;
+}
+
+.help__icon-title {
+  font-size: 20px;
+  line-height: 115%;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
