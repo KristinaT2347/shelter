@@ -1,0 +1,92 @@
+@import "../../styles/base.css";
+@import "../../styles/button.css";
+@import "../../styles/card.css";
+@import "../../styles/footer.css";
+
+/* header */
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  height: 120px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #545454;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #545454;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.logo > h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 0.06em;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  border-bottom: 3px solid #f1cdb3;
+}
+
+
+/* our friens */
+
+.our-friends-section {
+  background-color: #f6f6f6;
+}
+
+.our-friends {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  height: 1342px;
+}
+
+.our-friends > h2 {
+  padding-top: 40px;
+  width: 400px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  padding-top: 42px;
+}
+
+.active-circle {
+  background-color: #f1cdb3;
+}
