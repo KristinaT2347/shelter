@@ -1,6 +1,8 @@
 @import "../../styles/base.css";
 @import "../../styles/button.css";
 @import "../../styles/card.css";
+@import "../../styles/logo.css";
+@import "../../styles/main-menu.css";
 @import "../../styles/footer.css";
 
 .header {
@@ -14,41 +16,11 @@
   padding-top: 60px;
   height: 908px;
 }
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-header a {
-  color: #cdcdcd;
-}
-
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #f1cdb3;
-  column-gap: 10px;
-  font-size: 13px;
-  line-height: 14.95px;
-}
-
-.logo > h1 {
-  margin: 0;
-  font-size: 32px;
-  line-height: 35.2px;
-}
-
-header nav ul {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-}
-
-header nav ul li a:hover,
-header nav ul li a.active {
-  border-bottom: 3px solid #f1cdb3;
 }
 
 .not-only {
@@ -67,15 +39,16 @@ header nav ul li a.active {
 
 .not-only__left-block > h2 {
   font-size: 44px;
-  color: #fff;
+  color: var(--color-white);
   width: 310px;
+  text-align: left;
 }
 
 .not-only__left-block > p {
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
-  color: #cdcdcd;
+  color: var(--color-dark-s);
   margin: 0;
 }
 
@@ -119,7 +92,7 @@ header nav ul li a.active {
 /* our friends */
 
 .our-friends-section {
-  background-color: #f6f6f6;
+  background-color: var(--color-light-l);
 }
 
 .our-friends {
@@ -132,7 +105,7 @@ header nav ul li a.active {
 }
 
 .our-friends > h2 {
-  width: 400px;
+  width: 460px;
 }
 
 .cards {
@@ -163,7 +136,7 @@ header nav ul li a.active {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 50px;
 }
 
 .help__icon {
@@ -189,7 +162,7 @@ header nav ul li a.active {
 /* in addition */
 
 .in-addition-section {
-  background-color: #f6f6f6;
+  background-color: var(--color-light-l);
 }
 
 .in-addition {
@@ -219,7 +192,7 @@ header nav ul li a.active {
   font-size: 15px;
   line-height: 110%;
   letter-spacing: 0.06em;
-  color: #545454;
+  color: var(--color-dark-l);
 }
 
 .bank-account {
@@ -227,7 +200,7 @@ header nav ul li a.active {
   align-items: center;
   gap: 15px;
   width: fit-content;
-  background-color: #f1cdb3;
+  background-color: var(--color-primary);
   border-radius: 9px;
   padding: 10px 15px;
 }
@@ -235,7 +208,7 @@ header nav ul li a.active {
 .bank-account__icon-svg {
   height: 23px;
   width: 30px;
-  color: #292929;
+  color: var(--color-dark-3xl);
 }
 
 .bank-account__account {
@@ -243,7 +216,7 @@ header nav ul li a.active {
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: #545454;
+  color: var(--color-dark-l);
 }
 
 .right-block__text {
@@ -251,5 +224,5 @@ header nav ul li a.active {
   font-size: 12px;
   line-height: 18px;
   display: flex;
-  color: #b2b2b2;
+  color: var(--color-dark-m);
 }

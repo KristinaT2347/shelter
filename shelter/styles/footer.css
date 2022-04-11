@@ -8,18 +8,18 @@ footer {
   height: 350px;
   padding-top: 56px;
   justify-content: space-between;
-  gap: 160px;
+  gap: 80px;
 }
 
 .footer__contacts {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 300px;
+  width: 350px;
 }
 
 .footer__contacts h2 {
-  color: #ffffff;
+  color: var(--color-white);
   max-width: 280px;
   text-align: left;
 }
@@ -29,20 +29,17 @@ footer {
   align-items: center;
   gap: 20px;
   width: fit-content;
+  color: var(--color-primary);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
 }
 
 .footer__contact > svg {
   height: 40px;
   width: 40px;
   flex: none;
-}
-
-.footer__contact > a {
-  color: #f1cdb3;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 115%;
-  letter-spacing: 0.06em;
 }
 
 .footer__image-container {

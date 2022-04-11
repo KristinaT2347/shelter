@@ -3,7 +3,28 @@
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  background-color: #FAFAFA;
+  background-color: var(--color-light-s);
   height: 435px;
   width: 270px;
+  border-radius: 9px;
+}
+
+.card:hover {
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+.card:hover .btn {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+}
+
+.card__image-container {
+  height: 270px;
+  object-fit: contain;
+}
+
+.card__image {
+  height: 100%;
+  border-radius: 9px 9px 0px 0px;
 }

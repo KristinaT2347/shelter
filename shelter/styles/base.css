@@ -1,12 +1,42 @@
+@import url("../assets/fonts/arial/stylesheet.css");
+@import url("../assets/fonts/georgia/stylesheet.css");
+
+:root {
+  --color-white: #fff;
+  --color-primary: #f1cdb3;
+  --color-primary-light: #fddcc4;
+  --color-light-s: #fafafa;
+  --color-light-l: #f6f6f6;
+  --color-dark-s: #cdcdcd;
+  --color-dark-m: #b2b2b2;
+  --color-dark-l: #545454;
+  --color-dark-3xl: #292929;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: "Georgia", serif;
+}
+
 a {
   text-decoration: none;
+}
+
+p {
+  font-family: "Arial";
 }
 
 h2 {
   font-size: 35px;
   font-weight: 400;
   line-height: 130%;
-  color: #545454;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
   text-align: center;
   margin: 0;
 }
