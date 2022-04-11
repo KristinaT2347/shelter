@@ -28,3 +28,9 @@
   height: 100%;
   border-radius: 9px 9px 0px 0px;
 }
+
+.card__title {
+  letter-spacing: 0.06em;
+  font-size: 20px;
+  line-height: 23px;
+}

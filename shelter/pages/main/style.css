@@ -40,7 +40,8 @@ header {
 .not-only__left-block > h2 {
   font-size: 44px;
   color: var(--color-white);
-  width: 310px;
+  width: 360px;
+  letter-spacing: unset;
   text-align: left;
 }
 
@@ -63,22 +64,28 @@ header {
 .about {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 120px;
   height: 588px;
+  padding-bottom: 18px;
 }
 
 .about__left-block {
-  flex: 1 1 0%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .about__right-block {
-  flex: 1 1 0%;
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding-right: 175px;
+  width: 430px;
+}
+
+.about__right-block > h2 {
+  text-align: left;
+  width: 320px;
 }
 
 .about__right-block > p {
@@ -102,18 +109,26 @@ header {
   justify-content: center;
   gap: 60px;
   height: 877px;
+  padding-bottom: 18px;
 }
 
 .our-friends > h2 {
   width: 460px;
 }
 
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .cards {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
+  gap: 90px;
 }
 
 /* help */
@@ -125,10 +140,11 @@ header {
   justify-content: center;
   height: 611px;
   gap: 60px;
+  padding-bottom: 20px;
 }
 
 .help > h2 {
-  width: 308px;
+  width: 340px;
 }
 
 .help__icons {
@@ -136,7 +152,8 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  column-gap: 120px;
+  row-gap: 55px;
 }
 
 .help__icon {
@@ -144,7 +161,6 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  width: 200px;
 }
 
 .help__icon-svg {
@@ -167,14 +183,16 @@ header {
 
 .in-addition {
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 462px;
   gap: 30px;
-  padding-top: 80px;
+  padding-bottom: 18px;
 }
 
-.in-addition__left-block {
+/* .in-addition__left-block {
   padding-left: 182px;
-}
+} */
 
 .in-addition__right-block {
   display: flex;
@@ -185,6 +203,7 @@ header {
 
 .in-addition__right-block > h2 {
   text-align: left;
+  width: 300px;
 }
 
 .right-block__subtitle {

@@ -1,7 +1,8 @@
 .main-menu a {
   color: var(--color-dark-l);
   display: inline-block;
-  height: 27px;
+  height: 25px;
+  font-size: 15px;
 }
 
 .main-menu--light a:hover,
@@ -21,7 +22,7 @@
 .main-menu ul {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 34px;
 }
 
 .main-menu a:hover,
