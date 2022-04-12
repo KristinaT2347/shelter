@@ -55,7 +55,3 @@ header {
   display: flex;
   gap: 20px;
 }
-
-.active-circle {
-  background-color: var(--color-primary);
-}
