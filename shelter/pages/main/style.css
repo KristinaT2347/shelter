@@ -224,6 +224,10 @@ header {
   padding: 10px 15px;
 }
 
+.bank-account:hover {
+  background-color: var(--color-primary-light);
+}
+
 .bank-account__icon-svg {
   height: 23px;
   width: 30px;
