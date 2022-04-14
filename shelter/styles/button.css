@@ -43,9 +43,5 @@
 
 .btn--active {
   pointer-events: none;
-}
-
-.btn--active,
-.btn--active:hover {
   background-color: var(--color-primary);
 }
