@@ -1,9 +1,9 @@
-@import "../../styles/base.css";
-@import "../../styles/button.css";
-@import "../../styles/card.css";
-@import "../../styles/logo.css";
-@import "../../styles/main-menu.css";
-@import "../../styles/footer.css";
+@import '../../styles/base.css';
+@import '../../styles/button.css';
+@import '../../styles/card.css';
+@import '../../styles/logo.css';
+@import '../../styles/main-menu.css';
+@import '../../styles/footer.css';
 
 .header {
   background: url(../../assets/images/start-screen-gradient-background.jpg)
@@ -21,6 +21,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 1279px) {
+  .header-container {
+    height: 1165px;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-container {
+    height: 823px;
+  }
 }
 
 .not-only {
@@ -57,6 +70,60 @@ header {
   display: flex;
   align-items: flex-end;
   height: 100%;
+}
+
+@media (max-width: 1279px) {
+  .not-only {
+    flex-direction: column;
+  }
+  .not-only__left-block {
+    padding: 60px 124px;
+    width: 100%;
+  }
+
+  .not-only__left-block h2 {
+    width: 310px;
+  }
+
+  .not-only__left-block p {
+    width: 460px;
+  }
+
+  .not-only__left-block-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .not-only__right-block {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  .not-only__right-block > img {
+    height: 593px;
+  }
+}
+
+@media (max-width: 767px) {
+  .not-only__left-block > h2 {
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .not-only__left-block {
+    padding: 60px 0 0;
+  }
+
+  .not-only__left-block p {
+    width: 100%;
+  }
+
+  .not-only__right-block > img {
+    height: 272px;
+  }
 }
 
 /* about */
@@ -96,6 +163,29 @@ header {
   margin: 0;
 }
 
+@media (max-width: 1279px) {
+  .about {
+    height: 1048px;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    height: 974px;
+    gap: 42px;
+  }
+
+  .about__right-block {
+    align-items: center;
+    width: 100%;
+  }
+
+  .about__right-block > h2 {
+    width: 260px;
+  }
+}
+
 /* our friends */
 
 .our-friends-section {
@@ -129,6 +219,41 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 90px;
+}
+
+@media (max-width: 1279px) {
+  .cards {
+    gap: 40px;
+  }
+
+  .cards > .card:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-friends > h2 {
+    width: 100%;
+  }
+
+  .cards > .card:nth-child(2) {
+    display: none;
+  }
+
+  .slider {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 80px;
+  }
+
+  .cards {
+    order: 1;
+  }
+
+  .slider .btn-circle {
+    order: 2;
+  }
 }
 
 /* help */
@@ -175,6 +300,50 @@ header {
   letter-spacing: 0.06em;
 }
 
+@media (max-width: 1279px) {
+  .help {
+    height: 779px;
+  }
+
+  .help__icons {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .help__icon {
+    width: 170px;
+  }
+}
+
+@media (max-width: 768px) {
+  .help {
+    height: 745px;
+    gap: 42px;
+  }
+
+  .help > h2 {
+    width: 100%;
+  }
+
+  .help__icons {
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .help__icon {
+    width: 130px;
+  }
+
+  .help__icon-svg {
+    height: 50px;
+    width: 50px;
+  }
+
+  .help__icon-title {
+    font-size: 15px;
+  }
+}
+
 /* in addition */
 
 .in-addition-section {
@@ -189,10 +358,6 @@ header {
   gap: 30px;
   padding-bottom: 18px;
 }
-
-/* .in-addition__left-block {
-  padding-left: 182px;
-} */
 
 .in-addition__right-block {
   display: flex;
@@ -248,4 +413,43 @@ header {
   line-height: 18px;
   display: flex;
   color: var(--color-dark-m);
+  font-style: italic;
+  font-family: 'Arial';
+}
+
+@media (max-width: 1279px) {
+  .in-addition {
+    height: 783px;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 767px) {
+  .in-addition {
+    height: 542px;
+  }
+
+  .in-addition__left-block > img {
+    height: 135px;
+  }
+
+  .in-addition__right-block {
+    width: 100%;
+    align-items: center;
+  }
+
+  .in-addition__right-block > h2 {
+    width: 240px;
+    text-align: center;
+  }
+
+  .right-block__subtitle {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: initial;
+  }
+
+  .bank-account__account {
+    font-size: 15px;
+  }
 }

@@ -3,7 +3,7 @@
   display: inline-block;
   height: 25px;
   font-size: 15px;
-  font-family: "Arial";
+  font-family: 'Arial';
 }
 
 .main-menu--light a:hover,
@@ -28,4 +28,10 @@
 
 .main-menu a.active {
   border-bottom: 3px solid var(--color-primary);
+}
+
+@media (max-width: 767px) {
+  .main-menu {
+    display: none;
+  }
 }

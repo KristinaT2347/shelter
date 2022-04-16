@@ -55,3 +55,44 @@ footer {
   align-items: flex-end;
   justify-content: end;
 }
+
+@media (max-width: 1279px) {
+  .footer {
+    height: 639px;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 0px;
+    align-items: stretch;
+  }
+
+  .footer__contacts {
+    width: 300px;
+  }
+
+  .footer__contact {
+    width: 300px;
+  }
+
+  .footer__image-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    height: 809px;
+  }
+
+  .footer__image-container > img {
+    height: 269px;
+  }
+
+  .footer__contacts > h2 {
+    text-align: center;
+  }
+
+  .footer__contact {
+    justify-content: center;
+  }
+}
