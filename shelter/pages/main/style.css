@@ -1,9 +1,9 @@
-@import "../../styles/base.css";
-@import "../../styles/button.css";
-@import "../../styles/card.css";
-@import "../../styles/logo.css";
-@import "../../styles/main-menu.css";
-@import "../../styles/footer.css";
+@import '../../styles/base.css';
+@import '../../styles/button.css';
+@import '../../styles/card.css';
+@import '../../styles/logo.css';
+@import '../../styles/main-menu.css';
+@import '../../styles/footer.css';
 
 .header {
   background: url(../../assets/images/start-screen-gradient-background.jpg)
@@ -21,6 +21,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 1279px) {
+  .header-container {
+    height: 1165px;
+    padding-top: 30px;
+  }
 }
 
 .not-only {
@@ -57,6 +64,41 @@ header {
   display: flex;
   align-items: flex-end;
   height: 100%;
+}
+
+@media (max-width: 1279px) {
+  .not-only {
+    flex-direction: column;
+  }
+  .not-only__left-block {
+    padding: 60px 124px;
+    width: 100%;
+  }
+
+  .not-only__left-block h2 {
+    width: 310px;
+  }
+
+  .not-only__left-block p {
+    width: 460px;
+  }
+
+  .not-only__left-block-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .not-only__right-block {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  .not-only__right-block > img {
+    height: 593px;
+  }
 }
 
 /* about */
@@ -96,6 +138,13 @@ header {
   margin: 0;
 }
 
+@media (max-width: 1279px) {
+  .about {
+    height: 1048px;
+    flex-direction: column-reverse;
+  }
+}
+
 /* our friends */
 
 .our-friends-section {
@@ -129,6 +178,16 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 90px;
+}
+
+@media (max-width: 1279px) {
+  .cards {
+    gap: 40px;
+  }
+
+  .cards > .card:last-child {
+    display: none;
+  }
 }
 
 /* help */
@@ -173,6 +232,21 @@ header {
   line-height: 115%;
   line-height: 115%;
   letter-spacing: 0.06em;
+}
+
+@media (max-width: 1279px) {
+  .help {
+    height: 779px;
+  }
+
+  .help__icons {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .help__icon {
+    width: 170px;
+  }
 }
 
 /* in addition */
@@ -248,4 +322,13 @@ header {
   line-height: 18px;
   display: flex;
   color: var(--color-dark-m);
+  font-style: italic;
+  font-family: 'Arial';
+}
+
+@media (max-width: 1279px) {
+  .in-addition {
+    height: 783px;
+    flex-direction: column-reverse;
+  }
 }

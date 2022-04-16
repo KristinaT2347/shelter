@@ -1,5 +1,5 @@
-@import url("../assets/fonts/arial/stylesheet.css");
-@import url("../assets/fonts/georgia/stylesheet.css");
+@import url('../assets/fonts/arial/stylesheet.css');
+@import url('../assets/fonts/georgia/stylesheet.css');
 
 :root {
   --color-white: #fff;
@@ -20,7 +20,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
 }
 
 a {
@@ -28,7 +28,7 @@ a {
 }
 
 p {
-  font-family: "Arial";
+  font-family: 'Arial';
 }
 
 h2 {
@@ -52,4 +52,10 @@ li {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+@media (max-width: 1279px) {
+  .container {
+    padding: 0 30px;
+  }
 }
