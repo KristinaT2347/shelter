@@ -78,3 +78,21 @@ footer {
     justify-content: center;
   }
 }
+
+@media (max-width: 767px) {
+  .footer {
+    height: 809px;
+  }
+
+  .footer__image-container > img {
+    height: 269px;
+  }
+
+  .footer__contacts > h2 {
+    text-align: center;
+  }
+
+  .footer__contact {
+    justify-content: center;
+  }
+}

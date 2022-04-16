@@ -59,3 +59,13 @@ li {
     padding: 0 30px;
   }
 }
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .container {
+    padding: 0 10px;
+  }
+}

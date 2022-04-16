@@ -29,3 +29,9 @@
 .main-menu a.active {
   border-bottom: 3px solid var(--color-primary);
 }
+
+@media (max-width: 767px) {
+  .main-menu {
+    display: none;
+  }
+}
