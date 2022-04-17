@@ -59,6 +59,8 @@ header {
 @media (max-width: 1279px) {
   .our-friends {
     height: 1733px;
+    padding-bottom: none;
+    gap: 42px;
   }
 
   .cards {
@@ -68,5 +70,21 @@ header {
   .cards > .card:nth-child(7),
   .cards > .card:nth-child(8) {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-friends {
+    height: 1649px;
+  }
+
+  .cards > .card:nth-child(4),
+  .cards > .card:nth-child(5),
+  .cards > .card:nth-child(6) {
+    display: none;
+  }
+
+  .pagination {
+    gap: 10px;
   }
 }
