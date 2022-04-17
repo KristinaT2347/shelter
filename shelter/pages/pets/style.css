@@ -1,9 +1,9 @@
-@import "../../styles/base.css";
-@import "../../styles/button.css";
-@import "../../styles/card.css";
-@import "../../styles/logo.css";
-@import "../../styles/main-menu.css";
-@import "../../styles/footer.css";
+@import '../../styles/base.css';
+@import '../../styles/button.css';
+@import '../../styles/card.css';
+@import '../../styles/logo.css';
+@import '../../styles/main-menu.css';
+@import '../../styles/footer.css';
 
 /* header */
 
@@ -47,11 +47,26 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
   width: 100%;
 }
 
 .pagination {
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 1279px) {
+  .our-friends {
+    height: 1733px;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .cards > .card:nth-child(7),
+  .cards > .card:nth-child(8) {
+    display: none;
+  }
 }
