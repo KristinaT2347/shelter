@@ -1,24 +1,46 @@
-@import "../../styles/base.css";
-@import "../../styles/button.css";
-@import "../../styles/card.css";
-@import "../../styles/logo.css";
-@import "../../styles/main-menu.css";
-@import "../../styles/footer.css";
+@import '../../styles/base.css';
+@import '../../styles/button.css';
+@import '../../styles/card.css';
+@import '../../styles/logo.css';
+@import '../../styles/main-menu.css';
+@import '../../styles/footer.css';
 
 /* header */
 
-header {
+.header {
   position: sticky;
   top: 0;
   width: 100%;
   background-color: var(--color-white);
 }
 
-.header-container {
+/* .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   height: 120px;
+  position: relative;
+} */
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  height: 120px;
+}
+
+.logo {
+  left: 0;
+}
+
+.icon-burger {
+  stroke: #000;
 }
 
 /* our friens */
@@ -32,9 +54,8 @@ header {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  gap: 60px;
-  height: 1342px;
-  padding-bottom: 18px;
+  gap: 55px;
+  padding: 80px 0 100px;
 }
 
 .our-friends > h2 {
@@ -45,13 +66,59 @@ header {
 .cards {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  row-gap: 35px;
+  column-gap: 40px;
   width: 100%;
 }
 
 .pagination {
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 1279px) {
+  .our-friends {
+    height: fit-content;
+    padding: 80px 30px 76px;
+    gap: 27px;
+  }
+
+  .cards {
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 30px;
+    margin-bottom: 14px;
+  }
+
+  .cards > .card:nth-child(7),
+  .cards > .card:nth-child(8) {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-friends {
+    padding: 42px 10px;
+    gap: 42px;
+  }
+
+  .our-friends > h2 {
+    width: 100%;
+  }
+
+  .cards {
+    margin: 0;
+  }
+
+  .cards > .card:nth-child(4),
+  .cards > .card:nth-child(5),
+  .cards > .card:nth-child(6) {
+    display: none;
+  }
+
+  .pagination {
+    gap: 10px;
+  }
 }

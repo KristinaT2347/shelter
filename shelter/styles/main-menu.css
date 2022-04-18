@@ -1,7 +1,7 @@
 .main-menu a {
   color: var(--color-dark-l);
   display: inline-block;
-  height: 25px;
+  padding: 4px 0;
   font-size: 15px;
   font-family: 'Arial';
 }
@@ -30,8 +30,74 @@
   border-bottom: 3px solid var(--color-primary);
 }
 
+.btn-burger {
+  display: none;
+  appearance: none;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 37px;
+  z-index: 20;
+}
+
+.icon-burger {
+  height: 30px;
+  width: 30px;
+  transition: all 0.5s ease-in-out;
+  stroke: #f1cdb3;
+}
+
+.is-menu-open .icon-burger {
+  transform: rotate(90deg);
+  stroke: #f1cdb3;
+}
+
 @media (max-width: 767px) {
   .main-menu {
-    display: none;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    right: -320px;
+    height: 100%;
+    width: 320px;
+    top: 0;
+    background-color: var(--color-dark-3xl);
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    padding: 100px 0;
+  }
+
+  .is-menu-open .main-menu {
+    right: 0;
+    display: flex;
+  }
+
+  .is-menu-open .overlay {
+    background: rgba(41, 41, 41, 0.6);
+    display: block;
+  }
+
+  .main-menu > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 46px;
+    z-index: 11;
+  }
+
+  .main-menu > ul a {
+    font-size: 32px;
+    color: var(--color-dark-s);
+  }
+
+  .main-menu > ul a:hover,
+  .main-menu > ul a.active {
+    color: var(--color-light-s);
+  }
+
+  .btn-burger {
+    display: block;
   }
 }

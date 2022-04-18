@@ -1,8 +1,11 @@
 .logo {
   display: flex;
+  position: absolute;
   flex-direction: column;
   align-items: center;
+  left: 40px;
   gap: 10px;
+  transition: all 0.5s linear;
 }
 
 .logo__title {
@@ -28,4 +31,29 @@
 
 .logo--light > .logo__subtitle {
   color: var(--color-white);
+}
+
+@media (max-width: 1267px) {
+  .logo {
+    left: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    left: 10px;
+  }
+
+  .is-menu-open .logo {
+    left: calc(100% - 300px);
+    z-index: 20;
+  }
+
+  .is-menu-open .logo > .logo__title {
+    color: var(--color-primary);
+  }
+
+  .is-menu-open .logo > .logo__subtitle {
+    color: var(--color-white);
+  }
 }
