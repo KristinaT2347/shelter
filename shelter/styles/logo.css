@@ -45,7 +45,7 @@
   }
 
   .is-menu-open .logo {
-    left: calc(100% - 310px);
+    left: calc(100% - 300px);
     z-index: 20;
   }
 

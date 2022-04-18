@@ -22,6 +22,7 @@ header {
   justify-content: end;
   position: relative;
   height: 120px;
+  margin-top: 39px;
 }
 
 .logo {
@@ -41,10 +42,10 @@ header {
 
 @media (max-width: 767px) {
   .header-container {
-    height: 823px;
+    height: fit-content;
   }
   header {
-    margin-top: 35px;
+    margin-top: 31px;
   }
 }
 
@@ -57,7 +58,7 @@ header {
 .not-only__left-block {
   display: flex;
   flex-direction: column;
-  padding-top: 223px;
+  padding-top: 203px;
   width: 460px;
   gap: 42px;
 }
@@ -87,10 +88,12 @@ header {
 @media (max-width: 1279px) {
   .not-only {
     flex-direction: column;
+    align-items: center;
   }
+
   .not-only__left-block {
-    padding: 63px 124px;
-    width: 100%;
+    padding: 63px 0;
+    width: 460px;
   }
 
   .not-only__left-block h2 {
@@ -98,7 +101,7 @@ header {
   }
 
   .not-only__left-block p {
-    width: 460px;
+    width: 100%;
   }
 
   .not-only__left-block-button {
@@ -120,6 +123,10 @@ header {
 }
 
 @media (max-width: 767px) {
+  .not-only {
+    gap: 102px;
+  }
+
   .not-only__left-block > h2 {
     font-size: 25px;
     width: 220px;
@@ -129,12 +136,13 @@ header {
 
   .not-only__left-block {
     align-items: center;
+    width: 100%;
     padding: 60px 0 0;
   }
 
   .not-only__left-block p {
-    width: 100%;
     text-align: center;
+    max-width: 400px;
   }
 
   .not-only__right-block > img {
@@ -479,7 +487,7 @@ header {
     height: fit-content;
     flex-direction: column-reverse;
     padding: 80px 0 96px;
-    gap: 60px
+    gap: 60px;
   }
   .right-block__text {
     width: 100%;
@@ -490,7 +498,7 @@ header {
 @media (max-width: 767px) {
   .in-addition {
     padding: 42px 0 40px;
-    gap: 40px; 
+    gap: 40px;
   }
 
   .in-addition__left-block > img {

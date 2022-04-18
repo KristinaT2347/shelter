@@ -44,10 +44,12 @@
   height: 30px;
   width: 30px;
   transition: all 0.5s ease-in-out;
+  stroke: #f1cdb3;
 }
 
 .is-menu-open .icon-burger {
   transform: rotate(90deg);
+  stroke: #f1cdb3;
 }
 
 @media (max-width: 767px) {
@@ -81,7 +83,7 @@
     align-items: center;
     flex-direction: column;
     overflow-y: auto;
-    gap: 40px;
+    gap: 46px;
     z-index: 11;
   }
 
