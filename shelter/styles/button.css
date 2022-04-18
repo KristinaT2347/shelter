@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   width: fit-content;
+  flex: none;
   appearance: none;
   border-radius: 100px;
   height: 52px;
