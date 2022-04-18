@@ -13,20 +13,24 @@
 .header-container {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
   height: 908px;
 }
 
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
+  position: relative;
+  height: 120px;
+}
+
+.logo {
+  left: 0;
 }
 
 @media (max-width: 1279px) {
   .header-container {
     height: 1165px;
-    padding-top: 30px;
   }
 }
 
@@ -165,14 +169,15 @@ header {
 
 @media (max-width: 1279px) {
   .about {
-    height: 1048px;
+    padding: 80px 30px 100px;
+    height: fit-content;
     flex-direction: column-reverse;
   }
 }
 
 @media (max-width: 767px) {
   .about {
-    height: 974px;
+    padding: 42px 10px;
     gap: 42px;
   }
 
@@ -224,6 +229,8 @@ header {
 @media (max-width: 1279px) {
   .cards {
     gap: 40px;
+    width: 100%;
+    justify-content: center;
   }
 
   .cards > .card:last-child {

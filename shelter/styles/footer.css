@@ -88,6 +88,10 @@ footer {
     height: 269px;
   }
 
+  .footer__contacts {
+    align-items: center;
+  }
+
   .footer__contacts > h2 {
     text-align: center;
   }

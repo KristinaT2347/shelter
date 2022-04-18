@@ -17,8 +17,9 @@ header {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
   height: 120px;
+  position: relative;
 }
 
 /* our friens */
@@ -58,8 +59,8 @@ header {
 
 @media (max-width: 1279px) {
   .our-friends {
-    height: 1733px;
-    padding-bottom: none;
+    height: fit-content;
+    padding: 60px 0 70px;
     gap: 42px;
   }
 
@@ -75,7 +76,11 @@ header {
 
 @media (max-width: 767px) {
   .our-friends {
-    height: 1649px;
+   padding: 42px 0;
+  }
+
+  .our-friends > h2 {
+    width: 100%
   }
 
   .cards > .card:nth-child(4),

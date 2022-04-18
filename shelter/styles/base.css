@@ -23,6 +23,10 @@ html {
   font-family: 'Georgia', serif;
 }
 
+body {
+  min-width: 320px;
+}
+
 a {
   text-decoration: none;
 }
@@ -52,6 +56,22 @@ li {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 40px;
+}
+
+.is-menu-open {
+  overflow-y: hidden;
+}
+
+.overlay {
+  display: none;
+  background-color: rgba(255, 255, 255, 0);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 1279px) {
