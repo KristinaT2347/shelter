@@ -5,6 +5,7 @@
 @import '../../styles/logo.css';
 @import '../../styles/main-menu.css';
 @import '../../styles/footer.css';
+@import '../../styles/modal.css';
 
 .header {
   background: url(../../assets/images/start-screen-gradient-background.jpg)

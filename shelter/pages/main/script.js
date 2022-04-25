@@ -1,4 +1,5 @@
 import allPets from "../../js/pets.js"
+import { openModal } from "../../js/modal.js"
 
 const getRandomPets = (arr) => {
   return arr
@@ -18,7 +19,7 @@ const chunkArray = (arr, chunk_size) => {
 
 const createCard = (pet) => {
   return `
-  <div class="card">
+  <div class="card" data-name="${pet.name}">
     <div class="card__image-container">
       <img
         src="${pet.img}"
@@ -73,8 +74,17 @@ carousel.addEventListener("animationend", (animationEvent) => {
 
   btnPrevSlide.addEventListener("click", moveLeft)
   btnNextSlide.addEventListener("click", moveRight)
-})
 
+  const cards = activeSlide.querySelectorAll(".card")
+
+  cards.forEach((card) => {
+    card.addEventListener("click", (e) => {
+      console.log(e.currentTarget.dataset.name)
+      const pet = allPets.find((item) => item.name === e.currentTarget.dataset.name)
+      openModal(pet)
+    })
+  })
+})
 
 const generateSlides = () => {
   carousel.innerHTML = ""
@@ -114,6 +124,16 @@ const generateSlides = () => {
 
     carousel.append(slide)
   }
+
+  const cards = carousel.querySelectorAll(".card")
+
+  cards.forEach((card) => {
+    card.addEventListener("click", (e) => {
+      console.log(e.currentTarget.dataset.name)
+      const pet = allPets.find((item) => item.name === e.currentTarget.dataset.name)
+      openModal(pet)
+    })
+  })
 }
 
 generateSlides()

@@ -362,6 +362,30 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container" id="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal">
+        <button class="btn btn-circle modal_close-button" id="modal-close-button">
+          <svg class="help__icon-svg">
+            <use xlink:href="../../assets/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__left-block">
+          <img src="" alt="pet-photo" id="modal-image" />
+        </div>
+        <div class="modal__right-block">
+          <h2 id="modal-title"></h2>
+          <h3 id="modal-breed"></h3>
+          <p id="modal-description"></p>
+          <ul>
+            <li><b>Age:</b> <span id="modal-age"></span></li>
+            <li><b>Inoculations:</b> <span id="modal-inoculations"></span></li>
+            <li><b>Diseases:</b> <span id="modal-diseases"></span></li>
+            <li><b>Parasites:</b> <span id="modal-parasites"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="script.js" type="module"></script>
     <script src="../../js/main-menu.js"></script>
   </body>
