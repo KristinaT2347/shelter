@@ -88,43 +88,117 @@
           are looking for a house
         </h2>
         <div class="slider">
-          <button class="btn btn-circle">⬅</button>
-          <div class="cards">
-            <div class="card">
-              <div class="card__image-container">
-                <img
-                  src="../../assets/images/pets-katrine.jpg"
-                  alt="pets-katrine"
-                  class="card__image"
-                />
+          <button class="btn btn-circle" id="prev-slide">⬅</button>
+          <div class="carousel-wrapper">
+            <div class="carousel" id="carousel">
+              <div class="cards">
+                <div class="card">
+                  <div class="card__image-container">
+                    <img
+                      src="../../assets/images/pets-katrine.jpg"
+                      alt="pets-katrine"
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__title">Katrine</div>
+                  <button class="btn">Learn more</button>
+                </div>
+                <div class="card">
+                  <div class="card__image-container">
+                    <img
+                      src="../../assets/images/pets-jennifer.jpg"
+                      alt="pets-jennifer"
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__title">Jennifer</div>
+                  <button class="btn">Learn more</button>
+                </div>
+                <div class="card">
+                  <div class="card__image-container">
+                    <img
+                      src="../../assets/images/pets-woody.jpg"
+                      alt="pets-woody"
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__title">Woody</div>
+                  <button class="btn">Learn more</button>
+                </div>
               </div>
-              <div class="card__title">Katrine</div>
-              <button class="btn">Learn more</button>
-            </div>
-            <div class="card">
-              <div class="card__image-container">
-                <img
-                  src="../../assets/images/pets-jennifer.jpg"
-                  alt="pets-jennifer"
-                  class="card__image"
-                />
+              <div class="cards">
+                <div class="card">
+                  <div class="card__image-container">
+                    <img
+                      src="../../assets/images/pets-katrine.jpg"
+                      alt="pets-katrine"
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__title">Katrine</div>
+                  <button class="btn">Learn more</button>
+                </div>
+                <div class="card">
+                  <div class="card__image-container">
+                    <img
+                      src="../../assets/images/pets-jennifer.jpg"
+                      alt="pets-jennifer"
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__title">Jennifer</div>
+                  <button class="btn">Learn more</button>
+                </div>
+                <div class="card">
+                  <div class="card__image-container">
+                    <img
+                      src="../../assets/images/pets-woody.jpg"
+                      alt="pets-woody"
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__title">Woody</div>
+                  <button class="btn">Learn more</button>
+                </div>
               </div>
-              <div class="card__title">Jennifer</div>
-              <button class="btn">Learn more</button>
-            </div>
-            <div class="card">
-              <div class="card__image-container">
-                <img
-                  src="../../assets/images/pets-woody.jpg"
-                  alt="pets-woody"
-                  class="card__image"
-                />
+              <div class="cards">
+                <div class="card">
+                  <div class="card__image-container">
+                    <img
+                      src="../../assets/images/pets-katrine.jpg"
+                      alt="pets-katrine"
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__title">Katrine</div>
+                  <button class="btn">Learn more</button>
+                </div>
+                <div class="card">
+                  <div class="card__image-container">
+                    <img
+                      src="../../assets/images/pets-jennifer.jpg"
+                      alt="pets-jennifer"
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__title">Jennifer</div>
+                  <button class="btn">Learn more</button>
+                </div>
+                <div class="card">
+                  <div class="card__image-container">
+                    <img
+                      src="../../assets/images/pets-woody.jpg"
+                      alt="pets-woody"
+                      class="card__image"
+                    />
+                  </div>
+                  <div class="card__title">Woody</div>
+                  <button class="btn">Learn more</button>
+                </div>
               </div>
-              <div class="card__title">Woody</div>
-              <button class="btn">Learn more</button>
             </div>
           </div>
-          <button class="btn btn-circle">➡</button>
+          <button class="btn btn-circle" id="next-slide">➡</button>
         </div>
         <a href="../pets/index.html" class="btn btn-primary"
           >Get to know the rest</a
@@ -288,7 +362,31 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <div class="modal-container" id="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal">
+        <button class="btn btn-circle modal_close-button" id="modal-close-button">
+          <svg class="help__icon-svg">
+            <use xlink:href="../../assets/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__left-block">
+          <img src="" alt="pet-photo" id="modal-image" />
+        </div>
+        <div class="modal__right-block">
+          <h2 id="modal-title"></h2>
+          <h3 id="modal-breed"></h3>
+          <p id="modal-description"></p>
+          <ul>
+            <li><b>Age:</b> <span id="modal-age"></span></li>
+            <li><b>Inoculations:</b> <span id="modal-inoculations"></span></li>
+            <li><b>Diseases:</b> <span id="modal-diseases"></span></li>
+            <li><b>Parasites:</b> <span id="modal-parasites"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
     <script src="../../js/main-menu.js"></script>
   </body>
 </html>

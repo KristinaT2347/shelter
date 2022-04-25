@@ -47,102 +47,19 @@
           Our friends who<br />
           are looking for a house
         </h2>
-        <div class="cards">
-          <div class="card">
-            <div class="card__image-container">
-              <img
-                src="../../assets/images/pets-katrine.jpg"
-                alt="pets-katrine"
-                class="card__image"
-              />
-            </div>
-            <div class="card__title">Katrine</div>
-            <button class="btn">Learn more</button>
-          </div>
-          <div class="card">
-            <div class="card__image-container">
-              <img
-                src="../../assets/images/pets-jennifer.jpg"
-                alt="pets-jennifer"
-                class="card__image"
-              />
-            </div>
-            <div class="card__title">Jennifer</div>
-            <button class="btn">Learn more</button>
-          </div>
-          <div class="card">
-            <div class="card__image-container">
-              <img
-                src="../../assets/images/pets-woody.jpg"
-                alt="pets-woody"
-                class="card__image"
-              />
-            </div>
-            <div class="card__title">Woody</div>
-            <button class="btn">Learn more</button>
-          </div>
-          <div class="card">
-            <div class="card__image-container">
-              <img
-                src="../../assets/images/pets-sophia.jpg"
-                alt="pets-sophia"
-                class="card__image"
-              />
-            </div>
-            <div class="card__title">Sophia</div>
-            <button class="btn">Learn more</button>
-          </div>
-          <div class="card">
-            <div class="card__image-container">
-              <img
-                src="../../assets/images/pets-timmy.jpg"
-                alt="pets-timmy"
-                class="card__image"
-              />
-            </div>
-            <div class="card__title">Timmy</div>
-            <button class="btn">Learn more</button>
-          </div>
-          <div class="card">
-            <div class="card__image-container">
-              <img
-                src="../../assets/images/pets-charly.jpg"
-                alt="pets-charly"
-                class="card__image"
-              />
-            </div>
-            <div class="card__title">Charly</div>
-            <button class="btn">Learn more</button>
-          </div>
-          <div class="card">
-            <div class="card__image-container">
-              <img
-                src="../../assets/images/pets-scarlet.jpg"
-                alt="pets-scarlett"
-                class="card__image"
-              />
-            </div>
-            <div class="card__title">Scarlett</div>
-            <button class="btn">Learn more</button>
-          </div>
-          <div class="card">
-            <div class="card__image-container">
-              <img
-                src="../../assets/images/pets-freddie.jpg"
-                alt="pets-freddie"
-                class="card__image"
-              />
-            </div>
-            <div class="card__title">Freddie</div>
-            <button class="btn">Learn more</button>
-          </div>
-        </div>
+        <div class="cards" id="cards-container"></div>
         <div class="pagination">
-          <button class="btn btn-circle" disabled="true"><<</button>
-          <button class="btn btn-circle" disabled="true"><</button>
-          <button class="btn btn-circle btn--active">1</button>
-          <button class="btn btn-circle">></button>
-          <button class="btn btn-circle">>></button>
+          <button class="btn btn-circle" disabled="true" id="first-page">
+            <<
+          </button>
+          <button class="btn btn-circle" disabled="true" id="prev-page">
+            <
+          </button>
+          <button class="btn btn-circle btn--active" id="current-page">
+            1
+          </button>
+          <button class="btn btn-circle" id="next-page">></button>
+          <button class="btn btn-circle" id="last-page">>></button>
         </div>
       </div>
     </section>
@@ -201,7 +118,31 @@
         </div>
       </div>
     </footer>
-    <script src="../pets/script.js"></script>
+    <div class="modal-container" id="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal">
+        <button class="btn btn-circle modal_close-button" id="modal-close-button">
+          <svg class="help__icon-svg">
+            <use xlink:href="../../assets/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__left-block">
+          <img src="" alt="pet-photo" id="modal-image" />
+        </div>
+        <div class="modal__right-block">
+          <h2 id="modal-title"></h2>
+          <h3 id="modal-breed"></h3>
+          <p id="modal-description"></p>
+          <ul>
+            <li><b>Age:</b> <span id="modal-age"></span></li>
+            <li><b>Inoculations:</b> <span id="modal-inoculations"></span></li>
+            <li><b>Diseases:</b> <span id="modal-diseases"></span></li>
+            <li><b>Parasites:</b> <span id="modal-parasites"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../pets/script.js" type="module"></script>
     <script src="../../js/main-menu.js"></script>
   </body>
 </html>

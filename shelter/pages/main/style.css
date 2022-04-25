@@ -1,9 +1,11 @@
 @import '../../styles/base.css';
 @import '../../styles/button.css';
 @import '../../styles/card.css';
+@import '../../styles/carousel.css';
 @import '../../styles/logo.css';
 @import '../../styles/main-menu.css';
 @import '../../styles/footer.css';
+@import '../../styles/modal.css';
 
 .header {
   background: url(../../assets/images/start-screen-gradient-background.jpg)
@@ -256,8 +258,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 90px;
+  width: 990px;
 }
 
 @media (max-width: 1279px) {
@@ -272,13 +274,9 @@ header {
   }
 
   .cards {
+    width: 580px;
     gap: 40px;
-    width: fit-content;
     justify-content: center;
-  }
-
-  .cards > .card:last-child {
-    display: none;
   }
 }
 
@@ -292,20 +290,20 @@ header {
     width: 100%;
   }
 
-  .cards > .card:nth-child(2) {
-    display: none;
-  }
-
   .slider {
+    max-width: 270px;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 20px;
     column-gap: 80px;
   }
 
-  .cards {
+  .carousel-wrapper {
     order: 1;
-    width: 100%;
+  }
+
+  .cards {
+    width: 270px;
   }
 
   .slider .btn-circle {
