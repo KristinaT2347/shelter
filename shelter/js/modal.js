@@ -27,6 +27,7 @@ closeButtonModal.addEventListener("click", () => {
 
 modalOverlay.addEventListener("click", () => {
   modal.classList.add("fade-out")
+  document.body.classList.remove('is-modal-open')
   setTimeout(() => {
     modal.classList.toggle("modal-container--active")
   }, 200)
