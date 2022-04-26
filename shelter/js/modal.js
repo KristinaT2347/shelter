@@ -5,6 +5,7 @@ const modalOverlay = document.querySelector(".modal-overlay")
 const openModal = (pet) => {
   modal.classList.toggle("modal-container--active")
   modal.classList.add("fade-in")
+  document.body.classList.add('is-modal-open');
 
   document.getElementById('modal-image').setAttribute('src', pet.img)
   document.getElementById('modal-title').textContent = pet.name
@@ -18,6 +19,7 @@ const openModal = (pet) => {
 
 closeButtonModal.addEventListener("click", () => {
   modal.classList.add("fade-out")
+  document.body.classList.remove('is-modal-open')
   setTimeout(() => {
     modal.classList.toggle("modal-container--active")
   }, 200)
