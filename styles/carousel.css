@@ -1,0 +1,80 @@
+.carousel-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 990px;
+  gap: 20px
+}
+
+.carousel {
+  gap: 110px;
+  position: relative;
+  display: flex;
+  left: -1100px;
+}
+
+
+@keyframes move-right {
+  from {left: -1100px;}
+  to {left: -2200px;}
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 2s;
+}
+
+@keyframes move-left {
+  from {left: -1100px;}
+  to {left: 0px;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 2s;
+}
+
+@media (max-width: 1279px) {
+  .carousel-wrapper {
+    width: 580px;
+  }
+
+  .carousel {
+    gap: 70px;
+    left: -650px;
+  }
+
+  @keyframes move-right {
+    from {left: -650px;}
+    to {left: -1300px;}
+  }
+
+  @keyframes move-left {
+    from {left: -650px;}
+    to {left: 0px;}
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-wrapper {
+    width: 270px;
+  }
+
+  .carousel {
+    gap: 30px;
+    left: -300px;
+  }
+
+  /* .cards {
+    width: 300px;
+  } */
+
+  @keyframes move-right {
+    from {left: -300px;}
+    to {left: -600px;}
+  }
+
+  @keyframes move-left {
+    from {left: -300px;}
+    to {left: 0px;}
+  }
+}

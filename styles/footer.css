@@ -1,0 +1,150 @@
+footer {
+  background: url(../assets/images/footer-gradient-background.jpg) no-repeat
+    center top / cover;
+}
+
+.footer {
+  display: flex;
+  height: 350px;
+  padding-top: 56px;
+  justify-content: space-between;
+  gap: 118px;
+}
+
+.footer__address {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 95px;
+}
+
+.footer__contacts {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.footer__contacts h2 {
+  color: var(--color-white);
+  max-width: 280px;
+  text-align: left;
+}
+
+.footer__contact {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  color: var(--color-primary);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+
+.footer__contact > svg {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  flex: none;
+}
+
+.footer__contact > svg.footer__icon-pin {
+  margin-top: 7px;
+  width: 27px;
+}
+
+.footer__image-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.footer__contacts-location {
+  gap: 30px;
+}
+
+.footer__contacts-location > .footer__contact {
+  justify-content: start;
+  gap: 16px;
+}
+
+@media (max-width: 1279px) {
+  .footer {
+    height: fit-content;
+    padding: 30px 64px 0 64px;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .footer__address {
+    flex-basis: 100%;
+    justify-content: center;
+    gap: 39px;
+  }
+
+  .footer__contacts {
+    gap: 12px;
+    flex: none;
+  }
+
+  .footer__contacts > h2 {
+    padding-bottom: 12px;
+  }
+
+  .footer__contact {
+    width: 300px;
+    height: 50px;
+    height: 60px;
+  }
+
+  .footer__image-container {
+    justify-content: center;
+    flex: 0 1 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 30px 0 0;
+    gap: 25px;
+  }
+
+  .footer__image-container > img {
+    height: 269px;
+  }
+
+  .footer__address {
+    flex-direction: column;
+    gap: 27px;
+  }
+
+  .footer__contacts {
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer__contacts > h2 {
+    text-align: center;
+  }
+
+  .footer__contact {
+    justify-content: center;
+  }
+
+  .footer__contacts-location {
+    gap: 19px;
+    flex: 0 1 auto;
+  }
+
+  .footer__contacts-location > .footer__contact {
+    justify-content: start;
+    gap: 16px;
+  }
+}
